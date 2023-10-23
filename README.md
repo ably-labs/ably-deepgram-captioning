@@ -21,7 +21,7 @@ These should match your Ably API key from your Ably App, and your Deepgram API k
 
 Once you have that, run `npm run dev`.
 
-## Overview
+## Overview
 
 For this tutorial, we'll be making a [React](https://react.dev/) application with [Vite](https://vitejs.dev/), coded in [TypeScript](https://www.typescriptlang.org/).
 
@@ -29,7 +29,7 @@ The project will consist of a simple page with two buttons, 'Start Recording' an
 
 Once the transcript has been returned to our server, it will then publish the updated scripts to Ably, which will handle distributing them to all interested clients for rendering. We'll also include identification information per client so that we can create scripts indicating who said what.
 
-## Technology
+## Technology
 
 - **Deepgram**: A speech recognition (ASR) service that converts audio into text. Deepgram's API is powerful yet simple, making it a great choice for this project.
 - **Ably**: A Serverless WebSockets solution, which makes it easy to scale up communication between potentially millions of frontend devices and backends.
@@ -53,7 +53,6 @@ Create a new directory for your project and navigate into it via your terminal. 
    Next, install the necessary packages for your project:
 
    ```bash
-   n
    npm install @deepgram/sdk ably dotenv
    ```
 
@@ -388,7 +387,7 @@ With the server ready to start interfacing with Deepgram, it's time to set up ou
 
    If you run the project again now with `npm run dev`, you should see our new page.
 
-   [INSERT IMAGE]
+   <img width="1087" alt="Screenshot 2023-10-23 at 11 59 00" src="https://github.com/ably-labs/ably-deepgram-captioning/assets/9784119/ed6666b2-413b-4149-97b7-23bffb5e95bd">
 
 3. **Setting Up Ably**:
 
@@ -494,7 +493,7 @@ With the server ready to start interfacing with Deepgram, it's time to set up ou
 
 With all of that done, we should now have a fully functional app! Run `npm run dev` once more, and you should see the words you speak being captioned whilst recording.
 
-[INSERT IMAGE]
+![deepgram](https://github.com/ably-labs/ably-deepgram-captioning/assets/9784119/2dd7e1cf-c9ed-4f29-9f8b-4134023e3a74)
 
 ## Conclusion
 
